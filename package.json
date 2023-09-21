@@ -9,6 +9,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.9.2",
+<<<<<<< HEAD
+=======
+    "electron-squirrel-startup": "^1.0.0",
+>>>>>>> 5fa98031565d58c7b20cde812e14acb37bee1553
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -17,12 +21,23 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "react-scripts start",
+=======
+    "start": "electron-forge start",
+    "start:react": "react-scripts start",
+>>>>>>> 5fa98031565d58c7b20cde812e14acb37bee1553
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron-dev": "electron . dev",
+<<<<<<< HEAD
     "electron": "electron ."
+=======
+    "electron": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+>>>>>>> 5fa98031565d58c7b20cde812e14acb37bee1553
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +58,15 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
+=======
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+>>>>>>> 5fa98031565d58c7b20cde812e14acb37bee1553
     "electron": "^26.2.1"
   }
 }
