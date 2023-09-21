@@ -8,12 +8,12 @@ export const SelectFile = ({ setFile }) => {
     accept:
       "application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     customRequest: (file) => {
-      setFile(file.file);
+      setFile(file.file); 
       file.onSuccess();
     },
   };
   return (
-    <Dragger {...props}>
+    <Dragger {...props} style={{ height: "100vh" }}>
       <p className="ant-upload-drag-icon">
         <InboxOutlined />
       </p>

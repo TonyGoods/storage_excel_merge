@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { SelectFile } from "./Step/SelectFile";
 import { InputInfo } from "./Step/InputInfo";
 import { message } from "antd";
-import { read } from "xlsx";
 import { readFile } from "./utils/readFile";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       try {
         readFile(file, setWorkbook);
       } catch (e) {
-        console.log(e);
         setStep(0);
         message.error({
           content: "加载出错，请重试。",
@@ -33,7 +31,7 @@ function App() {
   if (step === 0) {
     return <SelectFile setFile={setFile} />;
   } else if (step === 1) {
-    return <InputInfo workbook={workbook} setFile={setFile} />;
+    return <InputInfo workbook={workbook} setStep={setStep} filename={file.name}/>;
   }
 }
 
